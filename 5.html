@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	'use strict'
+		/**
+		*  Функция сложения параметра 'a' на параметр 'b'
+		* param {number} a
+		* param {number} b
+		* @return (number)
+		*/
+	   function addition(a, b){
+		   return a+b;
+	   }
+	   /**
+		*  Функция вычитания параметра 'a' на параметр 'b'
+		* param {number} a
+		* param {number} b
+		* @return (number)
+		*/
+	   function minus(a, b){
+		   return a-b;
+	   }
+	   /**
+		*  Функция умножения параметра 'a' на параметр 'b'
+		* param {number} a
+		* param {number} b
+		* @return (number)
+		*/
+	   function multiplication(a, b){
+		   return a*b;
+	   }
+	   /**
+		*  Функция деления параметра 'a' на параметр 'b'
+		* param {number} a
+		* param {number} b
+		* @return (number)
+		*/
+	   function division (a, b){
+		   return a/b;
+	   }
+	   /**
+	   * Функция получает два числа и осуществляет операцию между ними
+	   *@param {nubmer} arg1
+	   *@param {nubmer} arg2
+	   *@param {string} operation может быть '+', '-', '*', '/'.
+	   */
+	  
+	    function MathOperation(arg1, arg2, operation) {
+		   switch (operation) {
+			   case '+':
+			        return addition(arg1, arg2);
+			   case '-':
+			        return minus(arg1, arg2);
+			   case '*':
+			        return multiplication(arg1, arg2);
+			   case '/':
+			        return division(arg1, arg2);
+		      }	
+		 }
+	 
+		console.log(MathOperation(3, 5, '+'));
+		console.log(MathOperation(3, 5, '-'));
+		console.log(MathOperation(3, 5, '*'));
+		console.log(MathOperation(3, 5, '/'));
+	</script>
+</body>
+</html>
